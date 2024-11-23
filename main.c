@@ -13,7 +13,7 @@ int main() {
     scanf("%lf %lf", &x2, &y2);
 
     double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
-    printf("Расстояние: %.2f\n", distance);
+    printf("Расстояние между точками (%lf, %lf) и (%lf, %lf): %.2f\n", x1,y1,x2, y2, distance);
     getchar(); getchar();
     return 0;
 }
