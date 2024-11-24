@@ -13,8 +13,8 @@ int main() {
     printf("¬ведите вторую точку (x2, y2): ");
     scanf("%lf %lf", &x2, &y2);
 
-    double distance = sqrt(pow(x2 - x, 2) + pow(y2 - y1, 2));
-    printf("¬ычисленное рассто€ние между двум€ точками на плоскости (%lf, %lf) и (%lf, %lf): %.2f\n", x,y1,x2, y2, distance);
+    double result = sqrt(pow(x2 - x, 2) + pow(y2 - y1, 2));
+    printf("¬ычисленное рассто€ние между двум€ точками на плоскости (%lf, %lf) и (%lf, %lf): %.2f\n", x,y1,x2, y2, result);
 
     getchar(); getchar();
     return 0;
