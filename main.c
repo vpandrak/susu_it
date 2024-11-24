@@ -3,10 +3,10 @@
 #include <math.h>
 
 int main() {
-    //кодировки
+    //кодировка не ломайс€ пожалуйста
     system("chcp 1251");
     system("cls");
-
+    // новый комментmain
     double x, y1, x2, y2;
     printf("¬ведите первую точку (x1, y1): ");
     scanf("%lf %lf", &x, &y1);
