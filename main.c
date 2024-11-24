@@ -3,7 +3,7 @@
 #include <math.h>
 
 int main() {
-    //кодировка
+    //кодировки
     system("chcp 1251");
     system("cls");
 
@@ -14,7 +14,7 @@ int main() {
     scanf("%lf %lf", &x2, &y2);
 
     double distance = sqrt(pow(x2 - x, 2) + pow(y2 - y1, 2));
-    printf("Вычисленное расстояние между двумя точками (%lf, %lf) и (%lf, %lf): %.2f\n", x,y1,x2, y2, distance);
+    printf("Вычисленное расстояние между двумя точками на плоскости (%lf, %lf) и (%lf, %lf): %.2f\n", x,y1,x2, y2, distance);
 
     getchar(); getchar();
     return 0;
