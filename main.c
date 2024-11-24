@@ -3,17 +3,19 @@
 #include <math.h>
 
 int main() {
-    //кодировка
+    //ГЄГ®Г¤ГЁГ°Г®ГўГЄГ 
     system("chcp 1251");
     system("cls");
-    double x1, y1, x2, y2;
-    printf("Введите первую точку (x1, y1): ");
-    scanf("%lf %lf", &x1, &y1);
-    printf("Введите вторую точку (x2, y2): ");
+
+    double x, y1, x2, y2;
+    printf("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г®Г°Г¤ГЁГ­Г ГІГ» ГЇГҐГ°ГўГ®Г© ГІГ®Г·ГЄГЁ (x1, y1): ");
+    scanf("%lf %lf", &x, &y1);
+    printf("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г®Г°Г¤ГЁГ­Г ГІГ» ГўГІГ®Г°Г®Г© ГІГ®Г·ГЄГЁ (x2, y2): ");
     scanf("%lf %lf", &x2, &y2);
-    //алгоритм расчета
-    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
-    printf("Расстояние между двумя точками (%lf, %lf) и (%lf, %lf): %.2f\n", x1,y1,x2, y2, distance);
+
+    double distance = sqrt(pow(x2 - x, 2) + pow(y2 - y1, 2));
+    printf("ГђГ Г±Г±ГІГ®ГїГ­ГЁГҐ Г¬ГҐГ¦Г¤Гі ГІГ®Г·ГЄГ Г¬ГЁ (%lf, %lf) ГЁ (%lf, %lf): %.2f\n", x,y1,x2, y2, distance);
+
     getchar(); getchar();
     return 0;
 }
