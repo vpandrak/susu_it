@@ -3,18 +3,18 @@
 #include <math.h>
 
 int main() {
-    //ГЄГ®Г¤ГЁГ°Г®ГўГЄГ 
+    //кодировка
     system("chcp 1251");
     system("cls");
 
     double x, y1, x2, y2;
-    printf("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г®Г°Г¤ГЁГ­Г ГІГ» ГЇГҐГ°ГўГ®Г© ГІГ®Г·ГЄГЁ (x1, y1): ");
+    printf("Введите первую точку (x1, y1): ");
     scanf("%lf %lf", &x, &y1);
-    printf("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г®Г°Г¤ГЁГ­Г ГІГ» ГўГІГ®Г°Г®Г© ГІГ®Г·ГЄГЁ (x2, y2): ");
+    printf("Введите вторую точку (x2, y2): ");
     scanf("%lf %lf", &x2, &y2);
 
     double distance = sqrt(pow(x2 - x, 2) + pow(y2 - y1, 2));
-    printf("ГђГ Г±Г±ГІГ®ГїГ­ГЁГҐ Г¬ГҐГ¦Г¤Гі ГІГ®Г·ГЄГ Г¬ГЁ (%lf, %lf) ГЁ (%lf, %lf): %.2f\n", x,y1,x2, y2, distance);
+    printf("Расстояния между точкой (%lf, %lf) и (%lf, %lf): %.2f\n", x,y1,x2, y2, distance);
 
     getchar(); getchar();
     return 0;
